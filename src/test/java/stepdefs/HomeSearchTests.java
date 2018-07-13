@@ -6,10 +6,11 @@ import org.openqa.selenium.By;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 
-public class StepDefinitions extends builderClass {
+public class HomeSearchTests extends builderClass {
 
   @Given("^I am on the homepage on URL \"([^\"]*)\"$")
   public void i_am_on_the_page_on_URL(String url) throws Throwable
@@ -35,6 +36,14 @@ public class StepDefinitions extends builderClass {
   public void i_click_on_button() throws Throwable
   {
     driver.findElement(By.xpath("//*[@id='nav-search']/form/div[2]/div/input")).click();
+  }
+
+  @When("^I click the dropdown and select \"([^\"]*)\"$")
+  public void i_click_the_dropdown(String category) throws Throwable
+  {
+    Select dropdown = new Select(driver.findElement(By.id("searchDropdownBox")));
+    Assert.assertEquals(category, "Fashion");
+    dropdown.selectByVisibleText(category);
   }
 
   @Then("^I am on the results page$")
