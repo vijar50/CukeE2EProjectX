@@ -9,5 +9,8 @@
         <module name="CukeE2EProject" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CukeE2EProject" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>

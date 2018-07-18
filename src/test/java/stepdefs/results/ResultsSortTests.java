@@ -10,7 +10,7 @@ import org.testng.Assert;
 import stepdefs.builderClass;
 
 
-public class HomeResultsTests extends builderClass {
+public class ResultsSortTests extends builderClass {
 
   @Given("^I am on the results on URL \"([^\"]*)\"$")
   public void i_am_on_the_page_on_URL(String url) throws Throwable

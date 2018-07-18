@@ -16,7 +16,7 @@ formatter.feature({
 });
 formatter.background({
   "line": 3,
-  "name": "User navigates to Amazon home page",
+  "name": "User views Amazon results",
   "description": "",
   "type": "background",
   "keyword": "Background"
@@ -33,143 +33,58 @@ formatter.match({
       "offset": 28
     }
   ],
-  "location": "HomeResultsTests.i_am_on_the_page_on_URL(String)"
+  "location": "ResultsSortTests.i_am_on_the_page_on_URL(String)"
 });
 formatter.result({
-  "duration": 4366620075,
+  "duration": 2707802684,
   "status": "passed"
 });
 formatter.scenario({
   "comments": [
     {
-      "line": 6,
+      "line": 18,
       "value": "#@Ignore"
     }
   ],
-  "line": 7,
-  "name": "Sort by Price: High to Low",
+  "line": 19,
+  "name": "filter by brand",
   "description": "",
-  "id": "test-results-functionality---sort-by,-star-rating,-brand,-pagination;sort-by-price:-high-to-low",
+  "id": "test-results-functionality---sort-by,-star-rating,-brand,-pagination;filter-by-brand",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 8,
-  "name": "I sort by \"Price: High to Low\"",
+  "line": 20,
+  "name": "I select a brand",
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "\"PNY GeForce GTX 1080 Ti Custom Design\" is displayed",
+  "line": 21,
+  "name": "I see results from \"ASUS\" only",
   "keyword": "Then "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Price: High to Low",
-      "offset": 11
-    }
-  ],
-  "location": "HomeResultsTests.i_sort_by(String)"
+  "location": "ResultsBrandTests.i_select_rating()"
 });
 formatter.result({
-  "duration": 1201986488,
+  "duration": 2062883518,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "PNY GeForce GTX 1080 Ti Custom Design",
-      "offset": 1
+      "val": "ASUS",
+      "offset": 20
     }
   ],
-  "location": "HomeResultsTests.is_displayed(String)"
+  "location": "ResultsBrandTests.results_from_brand(String)"
 });
 formatter.result({
-  "duration": 387609523,
+  "duration": 1736530573,
   "status": "passed"
 });
 formatter.after({
-  "duration": 3383144497,
-  "status": "passed"
-});
-formatter.background({
-  "line": 3,
-  "name": "User navigates to Amazon home page",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 4,
-  "name": "I am on the results on URL \"https://www.amazon.co.uk/s/ref\u003dnb_sb_noss_2?url\u003dsearch-alias%3Daps\u0026field-keywords\u003dGTX+1080\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "https://www.amazon.co.uk/s/ref\u003dnb_sb_noss_2?url\u003dsearch-alias%3Daps\u0026field-keywords\u003dGTX+1080",
-      "offset": 28
-    }
-  ],
-  "location": "HomeResultsTests.i_am_on_the_page_on_URL(String)"
-});
-formatter.result({
-  "duration": 4197197307,
-  "status": "passed"
-});
-formatter.scenario({
-  "comments": [
-    {
-      "line": 10,
-      "value": "#@Ignore"
-    }
-  ],
-  "line": 11,
-  "name": "Sort by Price: Low to High",
-  "description": "",
-  "id": "test-results-functionality---sort-by,-star-rating,-brand,-pagination;sort-by-price:-low-to-high",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 12,
-  "name": "I sort by \"Price: Low to High\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 13,
-  "name": "\"PNY GeForce GTX 1080 Ti Custom Design\" is not displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Price: Low to High",
-      "offset": 11
-    }
-  ],
-  "location": "HomeResultsTests.i_sort_by(String)"
-});
-formatter.result({
-  "duration": 1262725644,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "PNY GeForce GTX 1080 Ti Custom Design",
-      "offset": 1
-    }
-  ],
-  "location": "HomeResultsTests.is_not_displayed(String)"
-});
-formatter.result({
-  "duration": 427921932,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 3378650657,
+  "duration": 1119044720,
   "status": "passed"
 });
 });
