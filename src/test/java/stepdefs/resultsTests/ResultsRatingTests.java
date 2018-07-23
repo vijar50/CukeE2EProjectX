@@ -1,4 +1,4 @@
-package stepdefs.results;
+package stepdefs.resultsTests;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;

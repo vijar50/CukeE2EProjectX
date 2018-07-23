@@ -1,57 +1,61 @@
 [
   {
     "line": 1,
-    "name": "Test homepage functionality - search,login,categories",
-    "description": "",
-    "id": "test-homepage-functionality---search,login,categories",
-    "keyword": "Feature",
-    "uri": "AmazonHome.feature"
-  },
-  {
-    "line": 1,
     "elements": [
       {
         "line": 3,
-        "name": "User views Amazon results",
+        "name": "User navigates to Amazon home page",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 2707802684,
+              "duration": 3131908043,
               "status": "passed"
             },
             "line": 4,
-            "name": "I am on the results on URL \"https://www.amazon.co.uk/s/ref\u003dnb_sb_noss_2?url\u003dsearch-alias%3Daps\u0026field-keywords\u003dGTX+1080\"",
+            "name": "I am on the homepage on URL \"http://www.amazon.co.uk\"",
             "match": {
               "arguments": [
                 {
-                  "val": "https://www.amazon.co.uk/s/ref\u003dnb_sb_noss_2?url\u003dsearch-alias%3Daps\u0026field-keywords\u003dGTX+1080",
-                  "offset": 28
+                  "val": "http://www.amazon.co.uk",
+                  "offset": 29
                 }
               ],
-              "location": "ResultsSortTests.i_am_on_the_page_on_URL(String)"
+              "location": "HomeSearchTests.i_am_on_the_page_on_URL(String)"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 53263850,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should see the logo",
+            "match": {
+              "location": "HomeSearchTests.i_should_see_the_logo()"
+            },
+            "keyword": "Then "
           }
         ]
       },
       {
         "comments": [
           {
-            "line": 18,
-            "value": "#@Ignore"
+            "line": 6,
+            "value": "#  @Ignore"
           }
         ],
-        "line": 19,
-        "name": "filter by brand",
+        "line": 7,
+        "name": "Search for item",
         "description": "",
-        "id": "test-results-functionality---sort-by,-star-rating,-brand,-pagination;filter-by-brand",
+        "id": "test-homepage-functionality---search,categories,shop-by,login;search-for-item",
         "after": [
           {
             "result": {
-              "duration": 1119044720,
+              "duration": 1111481245,
               "status": "passed"
             },
             "match": {
@@ -64,37 +68,419 @@
         "steps": [
           {
             "result": {
-              "duration": 2062883518,
+              "duration": 78410799,
               "status": "passed"
             },
-            "line": 20,
-            "name": "I select a brand",
+            "line": 8,
+            "name": "I fill in the search box with \"GTX 1080\"",
             "match": {
-              "location": "ResultsBrandTests.i_select_rating()"
+              "arguments": [
+                {
+                  "val": "GTX 1080",
+                  "offset": 31
+                }
+              ],
+              "location": "HomeSearchTests.i_fill_in_search(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1736530573,
+              "duration": 2337630458,
               "status": "passed"
             },
-            "line": 21,
-            "name": "I see results from \"ASUS\" only",
+            "line": 9,
+            "name": "I click the search button",
+            "match": {
+              "location": "HomeSearchTests.i_click_on_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35249073,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am on the results page",
+            "match": {
+              "location": "HomeSearchTests.i_am_on_the_results_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User navigates to Amazon home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2230208714,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the homepage on URL \"http://www.amazon.co.uk\"",
             "match": {
               "arguments": [
                 {
-                  "val": "ASUS",
-                  "offset": 20
+                  "val": "http://www.amazon.co.uk",
+                  "offset": 29
                 }
               ],
-              "location": "ResultsBrandTests.results_from_brand(String)"
+              "location": "HomeSearchTests.i_am_on_the_page_on_URL(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 33752084,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should see the logo",
+            "match": {
+              "location": "HomeSearchTests.i_should_see_the_logo()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 11,
+            "value": "#@Ignore"
+          }
+        ],
+        "line": 12,
+        "name": "Search in Fashion category",
+        "description": "",
+        "id": "test-homepage-functionality---search,categories,shop-by,login;search-in-fashion-category",
+        "after": [
+          {
+            "result": {
+              "duration": 1108672070,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HomeSearchTests.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 99561332,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click the dropdown and select \"Fashion\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fashion",
+                  "offset": 33
+                }
+              ],
+              "location": "HomeSearchTests.i_click_the_dropdown(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 89070260,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I fill in the search box with \"GTX 1080\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GTX 1080",
+                  "offset": 31
+                }
+              ],
+              "location": "HomeSearchTests.i_fill_in_search(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2596642094,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click the search button",
+            "match": {
+              "location": "HomeSearchTests.i_click_on_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46843994,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am on the results page",
+            "match": {
+              "location": "HomeSearchTests.i_am_on_the_results_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User navigates to Amazon home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2235929732,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the homepage on URL \"http://www.amazon.co.uk\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.amazon.co.uk",
+                  "offset": 29
+                }
+              ],
+              "location": "HomeSearchTests.i_am_on_the_page_on_URL(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 59126578,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should see the logo",
+            "match": {
+              "location": "HomeSearchTests.i_should_see_the_logo()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 17,
+            "value": "#@Ignore"
+          }
+        ],
+        "line": 18,
+        "name": "Shop by Department",
+        "description": "",
+        "id": "test-homepage-functionality---search,categories,shop-by,login;shop-by-department",
+        "after": [
+          {
+            "result": {
+              "duration": 1117825741,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HomeSearchTests.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4868645520,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I shop by Department I choose \"Electronics \u0026 Computers\" and \"Headphones\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Electronics \u0026 Computers",
+                  "offset": 31
+                },
+                {
+                  "val": "Headphones",
+                  "offset": 61
+                }
+              ],
+              "location": "HomeDeptTests.i_shop_by(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50150513,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I am on the \"Headphones \u0026 Earphones\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Headphones \u0026 Earphones",
+                  "offset": 13
+                }
+              ],
+              "location": "HomeDeptTests.product_landing_page(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User navigates to Amazon home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2231814724,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the homepage on URL \"http://www.amazon.co.uk\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.amazon.co.uk",
+                  "offset": 29
+                }
+              ],
+              "location": "HomeSearchTests.i_am_on_the_page_on_URL(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31244136,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should see the logo",
+            "match": {
+              "location": "HomeSearchTests.i_should_see_the_logo()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 21,
+            "value": "# @Ignore"
+          }
+        ],
+        "line": 22,
+        "name": "Failed log in attempt",
+        "description": "",
+        "id": "test-homepage-functionality---search,categories,shop-by,login;failed-log-in-attempt",
+        "after": [
+          {
+            "result": {
+              "duration": 1109333680,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HomeSearchTests.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1784593620,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click the sign in button",
+            "match": {
+              "location": "HomeLoginTests.i_click_on_signin_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56149782,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I am on the login page",
+            "match": {
+              "location": "HomeLoginTests.i_am_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 486956883,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I enter my username \"test@ball.com\" and password \"abc12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@ball.com",
+                  "offset": 21
+                },
+                {
+                  "val": "abc12345",
+                  "offset": 50
+                }
+              ],
+              "location": "HomeLoginTests.i_enter_credentials(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43365735,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "login fails with \"We cannot find an account with that e-mail address\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "We cannot find an account with that e-mail address",
+                  "offset": 18
+                }
+              ],
+              "location": "HomeLoginTests.login_fail(String)"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
+    "name": "Test homepage functionality - search,categories,shop by,login",
+    "description": "",
+    "id": "test-homepage-functionality---search,categories,shop-by,login",
+    "keyword": "Feature",
+    "uri": "AmazonHome.feature"
+  },
+  {
+    "line": 1,
     "name": "Test results functionality - sort by, star rating, brand, pagination",
     "description": "",
     "id": "test-results-functionality---sort-by,-star-rating,-brand,-pagination",
