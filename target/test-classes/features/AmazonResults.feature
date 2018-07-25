@@ -15,7 +15,7 @@ Background: User views Amazon results
   Scenario: 4 star rating
     When I select a "4 Stars & Up" rating
     Then I don't see a lower rating on the results page
-  @Ignore
+  #@Ignore
   Scenario: filter by brand
     When I select a brand
     Then I see results from "ASUS" only

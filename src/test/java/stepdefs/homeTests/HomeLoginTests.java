@@ -7,6 +7,8 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import stepdefs.builderClass;
 import stepdefs.pages.HomePage;
@@ -21,10 +23,11 @@ public class HomeLoginTests extends builderClass {
   {
     home = new HomePage(driver);
     Actions action = new Actions(driver);
+    WebDriverWait wait = new WebDriverWait(driver, 3);
 
     action.moveToElement(home.FlyoutLink()).build().perform();
     log.debug("Flyout link text" + home.FlyoutLink().getText());
-    Thread.sleep(1000);
+    //Thread.sleep(1000);
 
     home.SignIn();
     log.debug("Sign in Button Clicked.");

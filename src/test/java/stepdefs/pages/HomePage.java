@@ -6,6 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+/*TO-DO List:
+1. Update to Page Factory Model
+2. Use Explicit Wait conditions on certain the methods
+ */
 public class HomePage {
   private static Logger log = LogManager.getLogger(HomePage.class.getName());
 
@@ -25,6 +29,9 @@ public class HomePage {
 
   //Flyout
   By flyout = By.id("nav-link-yourAccount");
+
+  //DeptFlyout
+  By deptFlyout = By.id("nav-flyout-shopAll");
 
   //Sign in Button
   By signButton = By.xpath("//div[@id='nav-flyout-ya-signin']/a");
@@ -66,24 +73,32 @@ public class HomePage {
   }
 
   public WebElement selectFirstCat(){
-    //WebElement ele = driver.findElement(By.id("nav-shop"));
+    //Needs Explicit Wait
     ele = driver.findElement(deptcat1);
     return ele;
   }
 
   public WebElement selectSecondCat(){
+    //Needs Explicit Wait
     ele = driver.findElement(deptcat2);
     return ele;
   }
 
   public WebElement selectThirdCat(){
+    //Needs Explicit Wait
     ele = driver.findElement(deptcat3);
     return ele;
   }
 
   public WebElement FlyoutLink(){
+    //Needs Explicit Wait
     ele = driver.findElement(flyout);
     return ele;
+  }
+
+  public By deptFlyoutLink(){
+    //Redundant
+    return deptFlyout;
   }
 
   public String getLoginTitle(){

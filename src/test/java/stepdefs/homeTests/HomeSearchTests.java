@@ -77,7 +77,7 @@ public class HomeSearchTests extends builderClass {
   @After
   public void tearDown() throws InterruptedException {
     log.debug("Close WebDriver");
-    Thread.sleep(1000);
+    //Thread.sleep(1000);
     driver.close();
     //null clears all the objects in driver out of memory
     driver = null;
