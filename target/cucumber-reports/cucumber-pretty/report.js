@@ -36,7 +36,7 @@ formatter.match({
   "location": "ResultsSortTests.i_am_on_the_page_on_URL(String)"
 });
 formatter.result({
-  "duration": 3233329671,
+  "duration": 4830225371,
   "status": "passed"
 });
 formatter.scenario({
@@ -67,7 +67,7 @@ formatter.match({
   "location": "ResultsBrandTests.i_select_a_brand()"
 });
 formatter.result({
-  "duration": 188440115,
+  "duration": 200586803,
   "status": "passed"
 });
 formatter.match({
@@ -80,11 +80,11 @@ formatter.match({
   "location": "ResultsBrandTests.results_from_brand(String)"
 });
 formatter.result({
-  "duration": 2872685204,
+  "duration": 2816290587,
   "status": "passed"
 });
 formatter.after({
-  "duration": 109430859,
+  "duration": 2331105714,
   "status": "passed"
 });
 });
