@@ -9,49 +9,87 @@
   },
   {
     "line": 1,
+    "name": "Test results functionality - sort by, star rating, brand, pagination",
+    "description": "",
+    "id": "test-results-functionality---sort-by,-star-rating,-brand,-pagination",
+    "keyword": "Feature",
+    "uri": "AmazonResults.feature"
+  },
+  {
+    "line": 1,
     "elements": [
       {
         "line": 3,
-        "name": "User views Amazon results",
+        "name": "User navigates to Amazon home page",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 4830225371,
+              "duration": 2939698660,
               "status": "passed"
             },
             "line": 4,
-            "name": "I am on the results on URL \"https://www.amazon.co.uk/s/ref\u003dnb_sb_noss_2?url\u003dsearch-alias%3Daps\u0026field-keywords\u003dGTX+1080\"",
+            "name": "I am on the homepage on URL \"http://www.amazon.co.uk\"",
             "match": {
               "arguments": [
                 {
-                  "val": "https://www.amazon.co.uk/s/ref\u003dnb_sb_noss_2?url\u003dsearch-alias%3Daps\u0026field-keywords\u003dGTX+1080",
-                  "offset": 28
+                  "val": "http://www.amazon.co.uk",
+                  "offset": 29
                 }
               ],
-              "location": "ResultsSortTests.i_am_on_the_page_on_URL(String)"
+              "location": "HomeSearchTests.i_am_on_the_page_on_URL(String)"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1579656647,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click on Today Deals",
+            "match": {
+              "location": "TodayDealsTests.i_click_on_today_deals()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 77794367,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Im on the \"Today\u0027s Deals\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Today\u0027s Deals",
+                  "offset": 11
+                }
+              ],
+              "location": "TodayDealsTests.im_on_today_deals_page(String)"
+            },
+            "keyword": "And "
           }
         ]
       },
       {
         "comments": [
           {
-            "line": 18,
+            "line": 7,
             "value": "#@Ignore"
           }
         ],
-        "line": 19,
-        "name": "filter by brand",
+        "line": 8,
+        "name": "Add a Deal to the Basket",
         "description": "",
-        "id": "test-results-functionality---sort-by,-star-rating,-brand,-pagination;filter-by-brand",
+        "id": "test-homepage-functionality---search,categories,shop-by,login;add-a-deal-to-the-basket",
         "after": [
           {
             "result": {
-              "duration": 2331105714,
+              "duration": 109132924,
               "status": "passed"
             },
             "match": {
@@ -64,41 +102,59 @@
         "steps": [
           {
             "result": {
-              "duration": 200586803,
+              "duration": 102326845,
               "status": "passed"
             },
-            "line": 20,
-            "name": "I select a brand",
+            "line": 9,
+            "name": "I click on a deal",
             "match": {
-              "location": "ResultsBrandTests.i_select_a_brand()"
+              "location": "TodayDealsTests.i_click_on_a_deal()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2816290587,
+              "duration": 1226995897,
               "status": "passed"
             },
-            "line": 21,
-            "name": "I see results from \"ASUS\" only",
+            "line": 10,
+            "name": "My basket counter is incremented",
             "match": {
-              "arguments": [
-                {
-                  "val": "ASUS",
-                  "offset": 20
-                }
-              ],
-              "location": "ResultsBrandTests.results_from_brand(String)"
+              "location": "TodayDealsTests.basket_counter_incremented()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 838043271,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click checkout",
+            "match": {
+              "location": "TodayDealsTests.i_click_checkout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 99402570,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "My basket has an item",
+            "match": {
+              "location": "TodayDealsTests.basket_has_item()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Test results functionality - sort by, star rating, brand, pagination",
+    "name": "Test homepage functionality - search,categories,shop by,login",
     "description": "",
-    "id": "test-results-functionality---sort-by,-star-rating,-brand,-pagination",
+    "id": "test-homepage-functionality---search,categories,shop-by,login",
     "keyword": "Feature",
-    "uri": "AmazonResults.feature"
+    "uri": "AmazonTodayDeals.feature"
   }
 ]

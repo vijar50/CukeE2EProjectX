@@ -14,77 +14,133 @@ formatter.feature({
   "id": "test-results-functionality---sort-by,-star-rating,-brand,-pagination",
   "keyword": "Feature"
 });
+formatter.uri("AmazonTodayDeals.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Test homepage functionality - search,categories,shop by,login",
+  "description": "",
+  "id": "test-homepage-functionality---search,categories,shop-by,login",
+  "keyword": "Feature"
+});
 formatter.background({
   "line": 3,
-  "name": "User views Amazon results",
+  "name": "User navigates to Amazon home page",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.step({
   "line": 4,
-  "name": "I am on the results on URL \"https://www.amazon.co.uk/s/ref\u003dnb_sb_noss_2?url\u003dsearch-alias%3Daps\u0026field-keywords\u003dGTX+1080\"",
+  "name": "I am on the homepage on URL \"http://www.amazon.co.uk\"",
   "keyword": "Given "
+});
+formatter.step({
+  "line": 5,
+  "name": "I click on Today Deals",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 6,
+  "name": "Im on the \"Today\u0027s Deals\" page",
+  "keyword": "And "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "https://www.amazon.co.uk/s/ref\u003dnb_sb_noss_2?url\u003dsearch-alias%3Daps\u0026field-keywords\u003dGTX+1080",
-      "offset": 28
+      "val": "http://www.amazon.co.uk",
+      "offset": 29
     }
   ],
-  "location": "ResultsSortTests.i_am_on_the_page_on_URL(String)"
+  "location": "HomeSearchTests.i_am_on_the_page_on_URL(String)"
 });
 formatter.result({
-  "duration": 4830225371,
+  "duration": 2939698660,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TodayDealsTests.i_click_on_today_deals()"
+});
+formatter.result({
+  "duration": 1579656647,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Today\u0027s Deals",
+      "offset": 11
+    }
+  ],
+  "location": "TodayDealsTests.im_on_today_deals_page(String)"
+});
+formatter.result({
+  "duration": 77794367,
   "status": "passed"
 });
 formatter.scenario({
   "comments": [
     {
-      "line": 18,
+      "line": 7,
       "value": "#@Ignore"
     }
   ],
-  "line": 19,
-  "name": "filter by brand",
+  "line": 8,
+  "name": "Add a Deal to the Basket",
   "description": "",
-  "id": "test-results-functionality---sort-by,-star-rating,-brand,-pagination;filter-by-brand",
+  "id": "test-homepage-functionality---search,categories,shop-by,login;add-a-deal-to-the-basket",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 20,
-  "name": "I select a brand",
+  "line": 9,
+  "name": "I click on a deal",
   "keyword": "When "
 });
 formatter.step({
-  "line": 21,
-  "name": "I see results from \"ASUS\" only",
+  "line": 10,
+  "name": "My basket counter is incremented",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "I click checkout",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "My basket has an item",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "ResultsBrandTests.i_select_a_brand()"
+  "location": "TodayDealsTests.i_click_on_a_deal()"
 });
 formatter.result({
-  "duration": 200586803,
+  "duration": 102326845,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "ASUS",
-      "offset": 20
-    }
-  ],
-  "location": "ResultsBrandTests.results_from_brand(String)"
+  "location": "TodayDealsTests.basket_counter_incremented()"
 });
 formatter.result({
-  "duration": 2816290587,
+  "duration": 1226995897,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TodayDealsTests.i_click_checkout()"
+});
+formatter.result({
+  "duration": 838043271,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TodayDealsTests.basket_has_item()"
+});
+formatter.result({
+  "duration": 99402570,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2331105714,
+  "duration": 109132924,
   "status": "passed"
 });
 });

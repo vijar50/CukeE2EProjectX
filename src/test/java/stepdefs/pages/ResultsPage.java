@@ -95,47 +95,4 @@ public class ResultsPage {
     }
   }
 
-
-
-
-
-
-/*
-  public String getTitle(){
-
-    return driver.findElement(title).getText();
-  }
-
-  public WebElement selectFirstCat(){
-    //Needs Explicit Wait
-    ele = driver.findElement(deptcat1);
-    return ele;
-  }
-
-  public String getLoginTitle(){
-    return driver.findElement(loginPage).getText();
-  }
-
-  public void SignIn(){
-    driver.findElement(signButton).click();
-  }
-
-  public void setUsername(String usn){
-    driver.findElement(username).sendKeys(usn);
-  }
-
-  public void setPassword(String pw){
-    driver.findElement(password).sendKeys(pw);
-  }
-
-
-  public boolean checkAmazonLogo(){
-    return driver.findElement(amazonLogo).isDisplayed();
-  }
-
-  public WebElement getSearchBox(){
-    return driver.findElement(homeSrch);
-  }
-*/
-
 }
