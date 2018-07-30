@@ -1,24 +1,20 @@
 package stepdefs.todayDealsTests;
 
-import com.google.common.collect.ImmutableList;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import stepdefs.builderClass;
-import stepdefs.pages.ResultsPage;
 import stepdefs.pages.TodayDealsPage;
 
 
-public class TodayDealsTests extends builderClass {
-  private static Logger log = LogManager.getLogger(TodayDealsTests.class.getName());
+public class TodayDealsAddTests extends builderClass {
+  private static Logger log = LogManager.getLogger(TodayDealsAddTests.class.getName());
   TodayDealsPage todaypage = PageFactory.initElements(driver, TodayDealsPage.class);
   WebDriverWait wait = new WebDriverWait(driver, 3);
 

@@ -17,9 +17,9 @@ formatter.feature({
 formatter.uri("AmazonTodayDeals.feature");
 formatter.feature({
   "line": 1,
-  "name": "Test homepage functionality - search,categories,shop by,login",
+  "name": "Test Today Deals page. Adding deals to basket, sort by price",
   "description": "",
-  "id": "test-homepage-functionality---search,categories,shop-by,login",
+  "id": "test-today-deals-page.-adding-deals-to-basket,-sort-by-price",
   "keyword": "Feature"
 });
 formatter.background({
@@ -54,14 +54,14 @@ formatter.match({
   "location": "HomeSearchTests.i_am_on_the_page_on_URL(String)"
 });
 formatter.result({
-  "duration": 2939698660,
+  "duration": 2804249957,
   "status": "passed"
 });
 formatter.match({
-  "location": "TodayDealsTests.i_click_on_today_deals()"
+  "location": "TodayDealsAddTests.i_click_on_today_deals()"
 });
 formatter.result({
-  "duration": 1579656647,
+  "duration": 1604670218,
   "status": "passed"
 });
 formatter.match({
@@ -71,76 +71,58 @@ formatter.match({
       "offset": 11
     }
   ],
-  "location": "TodayDealsTests.im_on_today_deals_page(String)"
+  "location": "TodayDealsAddTests.im_on_today_deals_page(String)"
 });
 formatter.result({
-  "duration": 77794367,
+  "duration": 83934911,
   "status": "passed"
 });
 formatter.scenario({
   "comments": [
     {
-      "line": 7,
+      "line": 13,
       "value": "#@Ignore"
     }
   ],
-  "line": 8,
-  "name": "Add a Deal to the Basket",
+  "line": 14,
+  "name": "Filter by Deal of the Day",
   "description": "",
-  "id": "test-homepage-functionality---search,categories,shop-by,login;add-a-deal-to-the-basket",
+  "id": "test-today-deals-page.-adding-deals-to-basket,-sort-by-price;filter-by-deal-of-the-day",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 9,
-  "name": "I click on a deal",
+  "line": 15,
+  "name": "I click \"Deal of the Day\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 10,
-  "name": "My basket counter is incremented",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "I click checkout",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 12,
-  "name": "My basket has an item",
+  "line": 16,
+  "name": "I only see items that are deals",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "TodayDealsTests.i_click_on_a_deal()"
+  "arguments": [
+    {
+      "val": "Deal of the Day",
+      "offset": 9
+    }
+  ],
+  "location": "TodayDealsPriceTests.i_click_dotd(String)"
 });
 formatter.result({
-  "duration": 102326845,
+  "duration": 128032504,
   "status": "passed"
 });
 formatter.match({
-  "location": "TodayDealsTests.basket_counter_incremented()"
+  "location": "TodayDealsPriceTests.i_only_see_items_that_are_deals()"
 });
 formatter.result({
-  "duration": 1226995897,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TodayDealsTests.i_click_checkout()"
-});
-formatter.result({
-  "duration": 838043271,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TodayDealsTests.basket_has_item()"
-});
-formatter.result({
-  "duration": 99402570,
+  "duration": 1387587872,
   "status": "passed"
 });
 formatter.after({
-  "duration": 109132924,
+  "duration": 110902697,
   "status": "passed"
 });
 });

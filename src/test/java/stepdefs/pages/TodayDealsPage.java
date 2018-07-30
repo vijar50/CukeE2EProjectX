@@ -12,7 +12,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import org.testng.Assert;
 
 
 public class TodayDealsPage {
@@ -37,13 +37,21 @@ public class TodayDealsPage {
   @FindBy(how = How.ID, using = "nav-cart-count")
   public WebElement cartcount;
 
-  //Price Range
+  //Deal of the day
+  @FindBy(how = How.XPATH , using = "//*[@id='widgetFilters']/div[3]/span[1]/div/a")
+  public WebElement dealOfTheDay;
 
+  /*//Price Range
+  @FindBy(how = How.XPATH , using = "//*[@id='widgetFilters']/div[1]/span[1]/div/a")
+  public WebElement price_range1;*/
 
   //Quantity in Checkout
   @FindBy(how = How.CSS, using = ".a-dropdown-prompt")
   public WebElement qty;
 
+  /*//Item Price
+  @FindBy(how = How.XPATH , using = "//*[@id='100_dealView_0']/div/div[2]/div/div/div[3]/div/span")
+  public WebElement iprice;*/
 
   public TodayDealsPage(WebDriver driver){
 
@@ -53,18 +61,20 @@ public class TodayDealsPage {
 
   }
 
-}
-  /*public String getTodayDealsPageHeader(){
-    return driver.findElement(pageHeader).getText();
-  }*/
- /* public List<String> getTodayDealsHeaders(){
-    //Example of when there are multiple headers, putting in an arrau
+  public void checkDealOfTheDay(){
+    WebDriverWait wait=new WebDriverWait(driver, 5);
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='100_dealView_0']/div/div[2]/"
+        + "div/div/div[2]/div/span[1]")));
+    int i = 0;
 
-    List<String> headerList= new ArrayList<String>();
-
-    for (WebElement webele : pageHeader){
-      headerList.add(webele.getText());
+    while(!driver.findElements(By.xpath("//*[@id='100_dealView_" + i + "']/div/div[2]/"
+        + "div/div/div[2]/div/span[1]")).isEmpty()){
+      String str = driver.findElement(By.xpath("//*[@id='100_dealView_" + i + "']/div/div[2]/"
+          + "div/div/div[2]/div/span[1]")).getText();
+      Assert.assertEquals(str, "DEAL OF THE DAY");
+      log.debug("The " + i + " deal is: " + str);
+      i++;
 
     }
-    return headerList;
-  }*/
+  }
+}
