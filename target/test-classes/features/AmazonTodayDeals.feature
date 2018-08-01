@@ -10,7 +10,7 @@ Background: User navigates to Amazon home page
     Then My basket counter is incremented
     And I click checkout
     Then My basket has an item
-  #@Ignore
+  @Ignore
   Scenario: Filter by Deal of the Day
     When I click "Deal of the Day"
     Then I only see items that are deals

@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5751a91-a060-4f36-a434-16edf16fdf56" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefs/todayDealsTests/TodayDealsPriceTests.java" afterDir="false" />
+    <list default="true" id="89723151-9a08-46d1-a611-efd2527c8b5c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeLoginTestsv2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefs/pages/HomePagev2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/pages/TodayDealsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/pages/TodayDealsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/todayDealsTests/TodayDealsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/todayDealsTests/TodayDealsAddTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeLoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeLoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AmazonHome.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AmazonHome.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/AmazonTodayDeals.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AmazonTodayDeals.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports/CucumberTestReport.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/CucumberTestReport.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/todayDealsTests/TodayDealsTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AmazonHome.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/AmazonHome.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AmazonTodayDeals.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/AmazonTodayDeals.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/homeTests/HomeLoginTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/homeTests/HomeLoginTests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,53 +25,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AmazonTodayDeals.feature" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/AmazonTodayDeals.feature">
+      <file leaf-file-name="AmazonHome.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/AmazonHome.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+            <state relative-caret-position="300">
+              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TodayDealsPriceTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/todayDealsTests/TodayDealsPriceTests.java">
+      <file leaf-file-name="HomeLoginTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeLoginTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+            <state relative-caret-position="765">
+              <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TodayDealsPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/TodayDealsPage.java">
+      <file leaf-file-name="HomeLoginTestsv2.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeLoginTestsv2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="65" column="94" lean-forward="true" selection-start-line="65" selection-start-column="94" selection-end-line="65" selection-end-column="94" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="615">
+              <caret line="53" column="3" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResultsPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/ResultsPage.java">
+      <file leaf-file-name="HomePagev2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/HomePagev2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="85" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="510">
+              <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeDeptTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeDeptTests.java">
+      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="35" column="104" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="104" />
+            <state relative-caret-position="-65">
+              <caret line="63" column="33" lean-forward="true" selection-start-line="63" selection-start-column="33" selection-end-line="64" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -76,8 +74,13 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>h1</find>
-      <find>explicit</find>
+      <find>getlogin</find>
+      <find>loginpage</find>
+      <find>flyout</find>
+      <find>Signin</find>
+      <find>setUser</find>
+      <find>Continue</find>
+      <find>loginfail</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -86,15 +89,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/stepdefs/pages/ResultsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/stepdefs/builderClass.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/AmazonResults.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/stepdefs/todayDealsTests/TodayDealsTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/stepdefs/todayDealsTests/TodayDealsAddTests.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/AmazonTodayDeals.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/stepdefs/pages/TodayDealsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/stepdefs/todayDealsTests/TodayDealsPriceTests.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/AmazonHome.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeLoginTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepdefs/pages/HomePagev2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeLoginTestsv2.java" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -109,34 +116,36 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="CukeE2EProjectX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CukeE2EProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="CukeE2EProjectX" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CukeE2EProjectX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CukeE2EProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="CukeE2EProjectX" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CukeE2EProjectX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CukeE2EProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="CukeE2EProjectX" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CukeE2EProjectX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CukeE2EProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="CukeE2EProjectX" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CukeE2EProjectX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CukeE2EProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="CukeE2EProjectX" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -144,7 +153,7 @@
               <item name="stepdefs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CukeE2EProjectX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CukeE2EProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="CukeE2EProjectX" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -153,7 +162,7 @@
               <item name="homeTests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CukeE2EProjectX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CukeE2EProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="CukeE2EProjectX" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -162,7 +171,7 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CukeE2EProjectX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CukeE2EProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="CukeE2EProjectX" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -171,7 +180,7 @@
               <item name="resultsTests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CukeE2EProjectX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CukeE2EProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="CukeE2EProjectX" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -180,14 +189,14 @@
               <item name="todayDealsTests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CukeE2EProjectX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CukeE2EProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="CukeE2EProjectX" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CukeE2EProjectX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CukeE2EProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="CukeE2EProjectX" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -198,13 +207,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="stepdefs.todayDealsTests" />
+      <recent name="stepdefs.homeTests" />
       <recent name="stepdefs.pages" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -353,48 +360,37 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b5751a91-a060-4f36-a434-16edf16fdf56" name="Default" comment="" />
-      <created>1532678967221</created>
+      <changelist id="89723151-9a08-46d1-a611-efd2527c8b5c" name="Default" comment="" />
+      <created>1533134079361</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1532678967221</updated>
+      <updated>1533134079361</updated>
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRunner - 2018.07.30 at 15h 12m 50s.xml">
+    <history-entry file="TestRunner - 2018.08.01 at 15h 36m 57s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.07.30 at 15h 14m 25s.xml">
+    <history-entry file="TestRunner - 2018.08.01 at 15h 49m 37s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.07.30 at 15h 27m 39s.xml">
+    <history-entry file="TestRunner - 2018.08.01 at 15h 58m 46s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.07.30 at 15h 31m 00s.xml">
+    <history-entry file="TestRunner - 2018.08.01 at 16h 06m 23s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.07.30 at 15h 32m 23s.xml">
+    <history-entry file="TestRunner - 2018.08.01 at 16h 14m 04s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.07.30 at 15h 34m 49s.xml">
-      <configuration name="TestRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestRunner - 2018.07.30 at 15h 35m 06s.xml">
-      <configuration name="TestRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestRunner - 2018.07.30 at 15h 36m 00s.xml">
-      <configuration name="TestRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestRunner - 2018.07.30 at 15h 37m 34s.xml">
-      <configuration name="TestRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestRunner - 2018.07.30 at 15h 40m 51s.xml">
+    <history-entry file="TestRunner - 2018.08.01 at 16h 14m 42s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="2562" height="1575" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -404,23 +400,23 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3294036" />
-      <window_info anchor="bottom" id="Version Control" weight="0.3294036" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3294036" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294036" />
+      <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13463067" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24980143" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
       <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
@@ -428,119 +424,100 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeLoginTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/AmazonLoggedInFeatures.feature">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/AmazonTodayDeals.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/AmazonResults.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeSearchTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="75" column="20" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/resultsTests/ResultsBrandTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/resultsTests/ResultsRatingTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/resultsTests/ResultsSortTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/AmazonHome.feature">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeDeptTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="35" column="104" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="104" />
+        <state relative-caret-position="105">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/builderClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/AmazonHomev2.feature">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/todayDealsTests/TodayDealsAddTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/ResultsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="85" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/TodayDealsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="65" column="94" lean-forward="true" selection-start-line="65" selection-start-column="94" selection-end-line="65" selection-end-column="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/todayDealsTests/TodayDealsPriceTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+        <state relative-caret-position="75">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/AmazonTodayDeals.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeLoginTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        <state relative-caret-position="765">
+          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/TodayDealsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/AmazonHome.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-65">
+          <caret line="63" column="33" lean-forward="true" selection-start-line="63" selection-start-column="33" selection-end-line="64" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/HomePagev2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeLoginTestsv2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="53" column="3" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

@@ -18,7 +18,7 @@ Background: User navigates to Amazon home page
   Scenario: Shop by Department
     When I shop by Department I choose "Electronics & Computers" and "Headphones"
     Then I am on the "Headphones & Earphones" page
-  @Ignore
+  #@Ignore
   Scenario: Failed log in attempt
     When I click the sign in button
     And I am on the login page

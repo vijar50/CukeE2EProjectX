@@ -18,7 +18,7 @@ public class HomeLoginTests extends builderClass {
   private static Logger log = LogManager.getLogger(HomeDeptTests.class.getName());
   HomePage home;
 
-  @When("^I click the sign in button$")
+ /* @When("^I click the sign in button$")
   public void i_click_on_signin_button() throws Throwable
   {
     home = new HomePage(driver);
@@ -32,17 +32,17 @@ public class HomeLoginTests extends builderClass {
     home.SignIn();
     log.debug("Sign in Button Clicked.");
 
-  }
+  }*/
 
-  @When("^I am on the login page$")
+  /*@When("^I am on the login page$")
   public void i_am_on_the_login_page() throws Throwable
   {
     home = new HomePage(driver);
     Assert.assertEquals(home.getLoginTitle(), "Sign in");
     log.debug("Login Page Title: " + home.getLoginTitle());
-  }
+  }*/
 
-  @When("^I enter my username \"([^\"]*)\" and password \"([^\"]*)\"$")
+  /*@When("^I enter my username \"([^\"]*)\" and password \"([^\"]*)\"$")
   public void i_enter_credentials(String username, String password) throws Throwable
   {
     home = new HomePage(driver);
@@ -52,14 +52,14 @@ public class HomeLoginTests extends builderClass {
     //Couldn't get to this stage as amazon validates email address
     //home.setPassword(password);
     //driver.findElement(By.id("signInSubmit")).click();
-  }
+  }*/
 
-  @Then("^login fails with \"([^\"]*)\"$")
+  /*@Then("^login fails with \"([^\"]*)\"$")
   public void login_fail(String failMessage) throws Throwable
   {
     home = new HomePage(driver);
     Assert.assertEquals(home.loginFailure(), failMessage);
     log.debug("Login Failed. Message: " + home.loginFailure());
-  }
+  }*/
 
 }
