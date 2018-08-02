@@ -21,11 +21,8 @@ public class HomeSearchTests extends builderClass {
   @Given("^I am on the homepage on URL \"([^\"]*)\"$")
   public void i_am_on_the_page_on_URL(String url) throws Throwable
   {
-    driver = initDriver();
-    driver.get(url);
     Assert.assertEquals(driver.getTitle(), "Amazon.co.uk: Low Prices in Electronics, "
         + "Books, Sports Equipment & more");
-    log.debug("Web Driver set up successfully");
   }
 
   @Then("^I should see the logo$")

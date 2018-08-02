@@ -43,6 +43,26 @@ public class HomePagev2 {
       + "a-vertical a-spacing-none']/li/span")
   public WebElement failureMessage;
 
+  //Shop by Department
+  @FindBy(how = How.ID , using = "nav-shop")
+  public WebElement deptcat1;
+
+  //Electronics and Computers Category
+  @FindBy(how = How.XPATH , using = "//span[contains(text(),'Electronics & Computers')]")
+  public WebElement deptcat2;
+
+  //Headphones Category
+  @FindBy(how = How.XPATH , using = "//*[@id='nav-flyout-shopAll']/div[3]/div[13]/div[1]/div/a[4]/span")
+  public WebElement deptcat3;
+
+  //Department Flyout
+  @FindBy(how = How.ID , using = "nav-flyout-shopAll")
+  public WebElement deptFlyout;
+
+  //Page Header
+  @FindBy(how = How.TAG_NAME , using = "h1")
+  public WebElement title;
+
   public HomePagev2(WebDriver driver){
     this.driver = driver;
     //Using the wait in the constructor
@@ -52,5 +72,10 @@ public class HomePagev2 {
   public void waitAndClickOnSignInContextMenu(){
     wait.until(ExpectedConditions.visibilityOf(signButton));
     signButton.click();
+  }
+
+  public void waitForFlyout(){
+    wait.until(ExpectedConditions.visibilityOf(deptFlyout));
+    log.debug("Menu Displayed? " + deptFlyout.isDisplayed());
   }
 }

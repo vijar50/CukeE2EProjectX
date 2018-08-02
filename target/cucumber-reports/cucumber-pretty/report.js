@@ -33,96 +33,74 @@ formatter.match({
   "location": "HomeSearchTests.i_am_on_the_page_on_URL(String)"
 });
 formatter.result({
-  "duration": 2976222235,
+  "duration": 81255124,
   "status": "passed"
 });
 formatter.match({
   "location": "HomeSearchTests.i_should_see_the_logo()"
 });
 formatter.result({
-  "duration": 53494245,
+  "duration": 30737580,
   "status": "passed"
 });
 formatter.scenario({
   "comments": [
     {
-      "line": 21,
+      "line": 6,
       "value": "#@Ignore"
     }
   ],
-  "line": 22,
-  "name": "Failed log in attempt",
+  "line": 7,
+  "name": "Search for item",
   "description": "",
-  "id": "test-homepage-functionality---search,categories,shop-by,login;failed-log-in-attempt",
+  "id": "test-homepage-functionality---search,categories,shop-by,login;search-for-item",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 23,
-  "name": "I click the sign in button",
+  "line": 8,
+  "name": "I fill in the search box with \"GTX 1080\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 24,
-  "name": "I am on the login page",
+  "line": 9,
+  "name": "I click the search button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 25,
-  "name": "I enter my username \"test@ball.com\" and password \"abc12345\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 26,
-  "name": "login fails with \"We cannot find an account with that e-mail address\"",
+  "line": 10,
+  "name": "I am on the results page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "HomeLoginTestsv2.i_click_on_signin_button()"
-});
-formatter.result({
-  "duration": 672344576,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HomeLoginTestsv2.i_am_on_the_login_page()"
-});
-formatter.result({
-  "duration": 64734717,
-  "status": "passed"
-});
-formatter.match({
   "arguments": [
     {
-      "val": "test@ball.com",
-      "offset": 21
-    },
-    {
-      "val": "abc12345",
-      "offset": 50
+      "val": "GTX 1080",
+      "offset": 31
     }
   ],
-  "location": "HomeLoginTestsv2.i_enter_credentials(String,String)"
+  "location": "HomeSearchTests.i_fill_in_search(String)"
 });
 formatter.result({
-  "duration": 509976883,
+  "duration": 1359552536,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "We cannot find an account with that e-mail address",
-      "offset": 18
-    }
-  ],
-  "location": "HomeLoginTestsv2.login_fail(String)"
+  "location": "HomeSearchTests.i_click_on_button()"
 });
 formatter.result({
-  "duration": 49576891,
+  "duration": 1382715076,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HomeSearchTests.i_am_on_the_results_page()"
+});
+formatter.result({
+  "duration": 38874079,
   "status": "passed"
 });
 formatter.after({
-  "duration": 110438463,
+  "duration": 110567302,
   "status": "passed"
 });
 formatter.uri("AmazonResults.feature");

@@ -3,7 +3,7 @@ Feature: Test homepage functionality - search,categories,shop by,login
 Background: User navigates to Amazon home page
   Given I am on the homepage on URL "http://www.amazon.co.uk"
   Then I should see the logo
-  @Ignore
+  #@Ignore
   Scenario: Search for item
     When I fill in the search box with "GTX 1080"
     And I click the search button
@@ -18,7 +18,7 @@ Background: User navigates to Amazon home page
   Scenario: Shop by Department
     When I shop by Department I choose "Electronics & Computers" and "Headphones"
     Then I am on the "Headphones & Earphones" page
-  #@Ignore
+  @Ignore
   Scenario: Failed log in attempt
     When I click the sign in button
     And I am on the login page
