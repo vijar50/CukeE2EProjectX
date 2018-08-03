@@ -18,6 +18,26 @@ public class HomePagev2 {
   WebDriver driver;
   WebDriverWait wait;
 
+  //Amazon Logo
+  @FindBy(how = How.XPATH , using = "//div[@id='desktop-banner']")
+  public WebElement amazonLogo;
+
+  //Search Input Field
+  @FindBy(how = How.ID , using = "twotabsearchtextbox")
+  public WebElement srchInField;
+
+  //Search Button
+  @FindBy(how = How.XPATH , using = "//*[@id='nav-search']/form/div[2]/div/input")
+  public WebElement srchButton;
+
+  //Department Filter
+  @FindBy(how = How.ID , using = "searchDropdownBox")
+  public WebElement deptFilter;
+
+  //Results Counter Element
+  @FindBy(how = How.XPATH , using = "//span[@id='s-result-count']")
+  public WebElement resultsCounter;
+
   //Today Deals Link
   @FindBy(how = How.TAG_NAME, using = "h1")
   public WebElement lp;

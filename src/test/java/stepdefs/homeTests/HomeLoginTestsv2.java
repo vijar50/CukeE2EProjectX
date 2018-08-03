@@ -10,9 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import stepdefs.builderClass;
-import stepdefs.pages.HomePage;
 import stepdefs.pages.HomePagev2;
-import stepdefs.pages.TodayDealsPage;
 
 
 public class HomeLoginTestsv2 extends builderClass {

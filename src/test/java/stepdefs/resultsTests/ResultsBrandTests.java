@@ -14,18 +14,18 @@ public class ResultsBrandTests extends builderClass {
   private static Logger log = LogManager.getLogger(ResultsBrandTests.class.getName());
   ResultsPage results;
 
-  @When("^I select a brand$")
+  /*@When("^I select a brand$")
   public void i_select_a_brand() throws Throwable
   {
     results = new ResultsPage(driver);
     results.clickBrand();
     log.debug("Found the ASUS checkbox and clicked it");
-  }
+  }*/
 
-  @Then("^I see results from \"([^\"]*)\" only$")
+  /*@Then("^I see results from \"([^\"]*)\" only$")
   public void results_from_brand(String brand) throws Throwable
   {
     results.checkResultingBrands(brand);
-  }
+  }*/
 
 }

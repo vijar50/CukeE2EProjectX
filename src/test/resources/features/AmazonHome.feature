@@ -3,7 +3,7 @@ Feature: Test homepage functionality - search,categories,shop by,login
 Background: User navigates to Amazon home page
   Given I am on the homepage on URL "http://www.amazon.co.uk"
   Then I should see the logo
-  #@Ignore
+  @Ignore
   Scenario: Search for item
     When I fill in the search box with "GTX 1080"
     And I click the search button

@@ -1,10 +1,16 @@
 import cucumber.api.CucumberOptions;
+import cucumber.api.java.After;
+import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.TestNGCucumberRunner;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.runner.RunWith;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import stepdefs.builderClass;
@@ -27,7 +33,6 @@ public class TestRunner extends builderClass {
   public void setUpClass() throws Exception {
     testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
     driver = initDriver();
-    driver.get("http://www.amazon.co.uk");
     log.debug("Web Driver set up successfully");
   }
 
@@ -44,5 +49,8 @@ public class TestRunner extends builderClass {
   @AfterClass(alwaysRun = true)
   public void tearDownClass() throws Exception {
     testNGCucumberRunner.finish();
+    driver.close();
+    driver = null;
+    log.debug("Close WebDriver");
   }
 }

@@ -21,15 +21,12 @@ public class TodayDealsAddTests extends builderClass {
   @Then("^I click on Today Deals$")
   public void i_click_on_today_deals() throws Throwable
   {
-    //Navigate to Today Page
     todaypage.todayDeals.click();
     log.debug("Today Deal Link clicked");
   }
   @And("^Im on the \"([^\"]*)\" page$")
   public void im_on_today_deals_page(String pagename) throws Throwable
   {
-    //POTENTIALLY FLAKEY TEST
-    //Checks the page header
     String actual = todaypage.pageHeader.getText();
     log.debug(todaypage.pageHeader.getText());
     Assert.assertEquals(actual, pagename);
@@ -38,10 +35,10 @@ public class TodayDealsAddTests extends builderClass {
   @When("^I click on a deal$")
   public void i_click_on_a_deal() throws Throwable
   {
-    //Check the deal logic
     String buttonText = todaypage.deal.getText();
     log.debug("Button Text: " + buttonText);
     todaypage.deal.click();
+    log.debug("Found a valid deal to add to basket");
   }
 
   @Then("^My basket counter is incremented$")
@@ -56,7 +53,6 @@ public class TodayDealsAddTests extends builderClass {
   public void i_click_checkout() throws Throwable
   {
     todaypage.cartcount.click();
-
   }
 
   @Then("^My basket has an item$")

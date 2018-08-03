@@ -6,103 +6,6 @@ formatter.feature({
   "id": "test-homepage-functionality---search,categories,shop-by,login",
   "keyword": "Feature"
 });
-formatter.background({
-  "line": 3,
-  "name": "User navigates to Amazon home page",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 4,
-  "name": "I am on the homepage on URL \"http://www.amazon.co.uk\"",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
-  "name": "I should see the logo",
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "http://www.amazon.co.uk",
-      "offset": 29
-    }
-  ],
-  "location": "HomeSearchTests.i_am_on_the_page_on_URL(String)"
-});
-formatter.result({
-  "duration": 81255124,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HomeSearchTests.i_should_see_the_logo()"
-});
-formatter.result({
-  "duration": 30737580,
-  "status": "passed"
-});
-formatter.scenario({
-  "comments": [
-    {
-      "line": 6,
-      "value": "#@Ignore"
-    }
-  ],
-  "line": 7,
-  "name": "Search for item",
-  "description": "",
-  "id": "test-homepage-functionality---search,categories,shop-by,login;search-for-item",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 8,
-  "name": "I fill in the search box with \"GTX 1080\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 9,
-  "name": "I click the search button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "I am on the results page",
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "GTX 1080",
-      "offset": 31
-    }
-  ],
-  "location": "HomeSearchTests.i_fill_in_search(String)"
-});
-formatter.result({
-  "duration": 1359552536,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HomeSearchTests.i_click_on_button()"
-});
-formatter.result({
-  "duration": 1382715076,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HomeSearchTests.i_am_on_the_results_page()"
-});
-formatter.result({
-  "duration": 38874079,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 110567302,
-  "status": "passed"
-});
 formatter.uri("AmazonResults.feature");
 formatter.feature({
   "line": 1,
@@ -110,6 +13,79 @@ formatter.feature({
   "description": "",
   "id": "test-results-functionality---sort-by,-star-rating,-brand,-pagination",
   "keyword": "Feature"
+});
+formatter.background({
+  "line": 3,
+  "name": "User views Amazon results",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 4,
+  "name": "I am on the results on URL \"https://www.amazon.co.uk/s/ref\u003dnb_sb_noss_2?url\u003dsearch-alias%3Daps\u0026field-keywords\u003dGTX+1080\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "https://www.amazon.co.uk/s/ref\u003dnb_sb_noss_2?url\u003dsearch-alias%3Daps\u0026field-keywords\u003dGTX+1080",
+      "offset": 28
+    }
+  ],
+  "location": "ResultsSortTests.i_am_on_the_page_on_URL(String)"
+});
+formatter.result({
+  "duration": 1568309391,
+  "status": "passed"
+});
+formatter.scenario({
+  "comments": [
+    {
+      "line": 18,
+      "value": "#@Ignore"
+    }
+  ],
+  "line": 19,
+  "name": "filter by brand",
+  "description": "",
+  "id": "test-results-functionality---sort-by,-star-rating,-brand,-pagination;filter-by-brand",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 20,
+  "name": "I select a brand",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 21,
+  "name": "I see results from \"ASUS\" only",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "ResultsBrandTestsv2.i_select_a_brand()"
+});
+formatter.result({
+  "duration": 841071264,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "ASUS",
+      "offset": 20
+    }
+  ],
+  "location": "ResultsBrandTestsv2.results_from_brand(String)"
+});
+formatter.result({
+  "duration": 2297672245,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 1002431442,
+  "status": "passed"
 });
 formatter.uri("AmazonTodayDeals.feature");
 formatter.feature({

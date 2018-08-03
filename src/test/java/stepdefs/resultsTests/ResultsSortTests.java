@@ -19,7 +19,7 @@ public class ResultsSortTests extends builderClass {
   @Given("^I am on the results on URL \"([^\"]*)\"$")
   public void i_am_on_the_page_on_URL(String url) throws Throwable
   {
-    driver = initDriver();
+    //driver = initDriver();
     driver.get(url);
     Assert.assertEquals(driver.getTitle(), "Amazon.co.uk: GTX 1080 - Graphics Cards / " +
             "Components: Computers & Accessories");

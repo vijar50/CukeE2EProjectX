@@ -30,7 +30,7 @@ public class TodayDealsPage {
   public WebElement pageHeader;
 
   //A Deal - Is not a View or See Options or a Deal has ended or Learn More
-  @FindBy(how = How.CSS, using = "#a-autoid-1-announce")
+  @FindBy(how = How.XPATH, using = "//*[contains(text(), 'Add to Basket')]")
   public WebElement deal;
 
   //Cart Count
