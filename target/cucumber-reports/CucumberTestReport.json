@@ -19,7 +19,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1568309391,
+              "duration": 1593534046,
               "status": "passed"
             },
             "line": 4,
@@ -31,7 +31,7 @@
                   "offset": 28
                 }
               ],
-              "location": "ResultsSortTests.i_am_on_the_page_on_URL(String)"
+              "location": "ResultsSortTestsv2.i_am_on_the_results_page_on_URL(String)"
             },
             "keyword": "Given "
           }
@@ -40,18 +40,18 @@
       {
         "comments": [
           {
-            "line": 18,
+            "line": 6,
             "value": "#@Ignore"
           }
         ],
-        "line": 19,
-        "name": "filter by brand",
+        "line": 7,
+        "name": "Sort by Price: High to Low",
         "description": "",
-        "id": "test-results-functionality---sort-by,-star-rating,-brand,-pagination;filter-by-brand",
+        "id": "test-results-functionality---sort-by,-star-rating,-brand,-pagination;sort-by-price:-high-to-low",
         "after": [
           {
             "result": {
-              "duration": 1002431442,
+              "duration": 1002257509,
               "status": "passed"
             },
             "match": {
@@ -64,31 +64,127 @@
         "steps": [
           {
             "result": {
-              "duration": 841071264,
+              "duration": 269944153,
               "status": "passed"
             },
-            "line": 20,
-            "name": "I select a brand",
+            "line": 8,
+            "name": "I sort by \"Price: High to Low\"",
             "match": {
-              "location": "ResultsBrandTestsv2.i_select_a_brand()"
+              "arguments": [
+                {
+                  "val": "Price: High to Low",
+                  "offset": 11
+                }
+              ],
+              "location": "ResultsSortTestsv2.i_sort_by(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2297672245,
+              "duration": 2061061271,
               "status": "passed"
             },
-            "line": 21,
-            "name": "I see results from \"ASUS\" only",
+            "line": 9,
+            "name": "\"PNY GeForce GTX 1080 Ti Custom Design\" is displayed",
             "match": {
               "arguments": [
                 {
-                  "val": "ASUS",
-                  "offset": 20
+                  "val": "PNY GeForce GTX 1080 Ti Custom Design",
+                  "offset": 1
                 }
               ],
-              "location": "ResultsBrandTestsv2.results_from_brand(String)"
+              "location": "ResultsSortTestsv2.result_is_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User views Amazon results",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1286363682,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the results on URL \"https://www.amazon.co.uk/s/ref\u003dnb_sb_noss_2?url\u003dsearch-alias%3Daps\u0026field-keywords\u003dGTX+1080\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.amazon.co.uk/s/ref\u003dnb_sb_noss_2?url\u003dsearch-alias%3Daps\u0026field-keywords\u003dGTX+1080",
+                  "offset": 28
+                }
+              ],
+              "location": "ResultsSortTestsv2.i_am_on_the_results_page_on_URL(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 10,
+            "value": "#@Ignore"
+          }
+        ],
+        "line": 11,
+        "name": "Sort by Price: Low to High",
+        "description": "",
+        "id": "test-results-functionality---sort-by,-star-rating,-brand,-pagination;sort-by-price:-low-to-high",
+        "after": [
+          {
+            "result": {
+              "duration": 1000690190,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HomeSearchTestsv2.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 116258923,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I sort by \"Price: Low to High\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Price: Low to High",
+                  "offset": 11
+                }
+              ],
+              "location": "ResultsSortTestsv2.i_sort_by(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1980139200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "\"PNY GeForce GTX 1080 Ti Custom Design\" is not displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PNY GeForce GTX 1080 Ti Custom Design",
+                  "offset": 1
+                }
+              ],
+              "location": "ResultsSortTestsv2.is_not_displayed(String)"
             },
             "keyword": "Then "
           }
