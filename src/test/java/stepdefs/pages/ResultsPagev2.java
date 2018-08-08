@@ -91,9 +91,7 @@ public class ResultsPagev2 {
       String part1xx = part1x.replace(",", "");
       String part1xxx = part1xx.replaceAll("[^0-9\\.]+", "");
       String part1xxxx = part1xxx.replaceAll("[.]$" , "");
-      String test = str.replaceAll("", "");
 
-      //log.debug(part1xxxx);
       double numPrice = Double.parseDouble(part1xxxx);
       log.debug("Price Result: " + numPrice);
       if(numPrice < 500.00){

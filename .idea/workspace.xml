@@ -2,22 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89723151-9a08-46d1-a611-efd2527c8b5c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefs/resultsTests/ResultsRatingTestsv2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefs/loggedInTests/LoggedInSuccessfulTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefs/loggedInTests/WishListTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefs/pages/LoggedInPages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/AmazonLoggedIn.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeSearchTestsv2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeSearchTestsv2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeLoginTestsv2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeLoginTestsv2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/pages/ResultsPagev2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/pages/ResultsPagev2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/resultsTests/ResultsBrandTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/resultsTests/ResultsRatingTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/resultsTests/ResultsSortTestsv2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/resultsTests/ResultsSortTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/resultsTests/ResultsSortTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AmazonHome.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AmazonHome.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/AmazonResults.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AmazonResults.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports/CucumberTestReport.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/CucumberTestReport.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AmazonHome.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/AmazonHome.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/AmazonResults.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/AmazonResults.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/homeTests/HomeSearchTestsv2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/homeTests/HomeSearchTestsv2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/homeTests/HomeLoginTestsv2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/homeTests/HomeLoginTestsv2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/pages/ResultsPage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/pages/ResultsPagev2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/pages/ResultsPagev2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/resultsTests/ResultsBrandTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/resultsTests/ResultsRatingTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/resultsTests/ResultsSortTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/resultsTests/ResultsSortTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/resultsTests/ResultsSortTests.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,47 +31,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AmazonResults.feature" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/AmazonResults.feature">
+      <file leaf-file-name="AmazonLoggedIn.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/AmazonLoggedIn.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+            <state relative-caret-position="90">
+              <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResultsSortTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/resultsTests/ResultsSortTests.java">
+      <file leaf-file-name="WishListTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/loggedInTests/WishListTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+            <state relative-caret-position="705">
+              <caret line="59" column="50" lean-forward="true" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResultsSortTestsv2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/resultsTests/ResultsSortTestsv2.java">
+      <file leaf-file-name="LoggedInPages.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/LoggedInPages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResultsPagev2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/ResultsPagev2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="73" selection-start-line="73" selection-end-line="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResultsPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/ResultsPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="786">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
             </state>
           </provider>
         </entry>
@@ -91,6 +75,7 @@
       <find>amazon</find>
       <find>homeS</find>
       <find>checkD</find>
+      <find>pass</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,7 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeLoginTestsv2.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeLoginTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeDeptTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeDeptTestsv2.java" />
@@ -110,7 +94,6 @@
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/pages/TodayDealsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/todayDealsTests/TodayDealsAddTests.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/AmazonTodayDeals.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/AmazonHome.feature" />
         <option value="$PROJECT_DIR$/src/test/java/TestRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/resultsTests/ResultsBrandTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/resultsTests/ResultsBrandTestsv2.java" />
@@ -118,9 +101,16 @@
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeSearchTestsv2.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/resultsTests/ResultsSortTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/resultsTests/ResultsRatingTestsv2.java" />
-        <option value="$PROJECT_DIR$/src/test/java/stepdefs/pages/ResultsPagev2.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/AmazonResults.feature" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/resultsTests/ResultsSortTestsv2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepdefs/pages/ResultsPagev2.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/AmazonHome.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/stepdefs/loggedInTests/HomeLoginTestsv2.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/AmazonResults.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeLoginTestsv2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepdefs/loggedInTests/LoggedInSuccessfulTests.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/AmazonLoggedIn.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/stepdefs/pages/LoggedInPages.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepdefs/loggedInTests/WishListTests.java" />
       </list>
     </option>
   </component>
@@ -203,6 +193,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="stepdefs" type="462c0819:PsiDirectoryNode" />
+              <item name="loggedInTests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CukeE2EProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CukeE2EProjectX" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stepdefs" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -266,8 +265,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="stepdefs.resultsTests" />
+      <recent name="stepdefs.loggedInTests" />
       <recent name="stepdefs.pages" />
+      <recent name="stepdefs.resultsTests" />
       <recent name="stepdefs.homeTests" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -425,40 +425,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRunner - 2018.08.07 at 15h 22m 09s.xml">
+    <history-entry file="TestRunner - 2018.08.07 at 15h 42m 25s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.08.07 at 15h 24m 53s.xml">
+    <history-entry file="TestRunner - 2018.08.07 at 15h 42m 46s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.08.07 at 15h 25m 33s.xml">
+    <history-entry file="TestRunner - 2018.08.08 at 09h 54m 01s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.08.07 at 15h 26m 15s.xml">
+    <history-entry file="TestRunner - 2018.08.08 at 11h 12m 00s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.08.07 at 15h 27m 32s.xml">
+    <history-entry file="TestRunner - 2018.08.08 at 15h 44m 00s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.08.07 at 15h 27m 59s.xml">
+    <history-entry file="TestRunner - 2018.08.08 at 15h 49m 07s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.08.07 at 15h 32m 55s.xml">
+    <history-entry file="TestRunner - 2018.08.08 at 15h 51m 15s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.08.07 at 15h 33m 18s.xml">
+    <history-entry file="TestRunner - 2018.08.08 at 15h 53m 43s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.08.07 at 15h 34m 22s.xml">
+    <history-entry file="TestRunner - 2018.08.08 at 15h 54m 21s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.08.07 at 15h 36m 14s.xml">
+    <history-entry file="TestRunner - 2018.08.08 at 15h 55m 51s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="2562" height="1575" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -616,13 +615,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/AmazonHomev2.feature" />
     <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeLoginTests.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeDeptTests.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeLoginTestsv2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="56" column="3" lean-forward="true" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="696">
@@ -637,13 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/TodayDealsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="78" column="3" selection-start-line="78" selection-start-column="3" selection-end-line="78" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -668,13 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/AmazonTodayDeals.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/builderClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -682,13 +660,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeDeptTestsv2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="35" lean-forward="true" selection-end-line="57" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -718,13 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/AmazonHome.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeSearchTestsv2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -732,13 +696,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/HomePagev2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="91" selection-start-line="91" selection-end-line="94" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -756,10 +713,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/ResultsPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/resultsTests/ResultsSortTestsv2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="465">
+          <caret line="40" column="3" lean-forward="true" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -770,24 +727,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/ResultsPagev2.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/ResultsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="261">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/resultsTests/ResultsSortTestsv2.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/ResultsPagev2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+        <state relative-caret-position="510">
+          <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/AmazonTodayDeals.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/AmazonResults.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        <state relative-caret-position="135">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeLoginTestsv2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="39" column="49" lean-forward="true" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/TodayDealsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="78" column="3" selection-start-line="78" selection-start-column="3" selection-end-line="78" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/AmazonHome.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/loggedInTests/LoggedInSuccessfulTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/AmazonLoggedIn.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/homeTests/HomeDeptTestsv2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/HomePagev2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="45" column="56" lean-forward="true" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/loggedInTests/WishListTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="59" column="50" lean-forward="true" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/pages/LoggedInPages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="786">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>

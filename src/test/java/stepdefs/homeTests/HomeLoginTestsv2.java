@@ -36,8 +36,8 @@ public class HomeLoginTestsv2 extends builderClass {
      log.debug("Login Page Title: " + hpage.lp.getText());
    }
 
-  @And("^I enter my username \"([^\"]*)\" and password \"([^\"]*)\"$")
-  public void i_enter_credentials(String username, String password) throws Throwable
+  @And("^I enter my username \"([^\"]*)\"$")
+  public void i_enter_credentials(String username) throws Throwable
   {
     hpage.usernameLocator.sendKeys(username);
     log.debug("Username is set to " + username);

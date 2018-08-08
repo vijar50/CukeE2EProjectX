@@ -6,6 +6,207 @@ formatter.feature({
   "id": "test-homepage-functionality---search,categories,shop-by,login",
   "keyword": "Feature"
 });
+formatter.uri("AmazonLoggedIn.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Test homepage functionality - search,categories,shop by,login",
+  "description": "",
+  "id": "test-homepage-functionality---search,categories,shop-by,login",
+  "keyword": "Feature"
+});
+formatter.background({
+  "comments": [
+    {
+      "line": 2,
+      "value": "#Uses the steps from AmazonHome"
+    }
+  ],
+  "line": 3,
+  "name": "User navigates to Amazon home page",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 4,
+  "name": "I am on the homepage on URL \"http://www.amazon.co.uk\"",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 5,
+  "name": "I click the sign in button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 6,
+  "name": "I am on the login page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 7,
+  "name": "I enter my username \"rajivmtest@hotmail.com\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 8,
+  "name": "I enter my password \"p@ssword1985\" and sign in",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "\"Rajiv\" is signed in",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "http://www.amazon.co.uk",
+      "offset": 29
+    }
+  ],
+  "location": "HomeSearchTestsv2.i_am_on_the_homepage_URL(String)"
+});
+formatter.result({
+  "duration": 1300841939,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HomeLoginTestsv2.i_click_on_signin_button()"
+});
+formatter.result({
+  "duration": 552346225,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HomeLoginTestsv2.i_am_on_the_login_page()"
+});
+formatter.result({
+  "duration": 53370197,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "rajivmtest@hotmail.com",
+      "offset": 21
+    }
+  ],
+  "location": "HomeLoginTestsv2.i_enter_credentials(String)"
+});
+formatter.result({
+  "duration": 596119468,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "p@ssword1985",
+      "offset": 21
+    }
+  ],
+  "location": "LoggedInSuccessfulTests.i_enter_password(String)"
+});
+formatter.result({
+  "duration": 2652234773,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Rajiv",
+      "offset": 1
+    }
+  ],
+  "location": "LoggedInSuccessfulTests.login_succeeded(String)"
+});
+formatter.result({
+  "duration": 36361218,
+  "status": "passed"
+});
+formatter.scenario({
+  "comments": [
+    {
+      "line": 11,
+      "value": "#@Ignore"
+    }
+  ],
+  "line": 12,
+  "name": "I add an item to my Wish List",
+  "description": "",
+  "id": "test-homepage-functionality---search,categories,shop-by,login;i-add-an-item-to-my-wish-list",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 13,
+  "name": "I click on Your Lists",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 14,
+  "name": "I select Wish List",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "I add an idea \"My Idea\" to my list",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "I click Add to list",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "My Wish List item is saved",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "WishListTests.i_click_on_your_lists()"
+});
+formatter.result({
+  "duration": 46004896,
+  "status": "passed"
+});
+formatter.match({
+  "location": "WishListTests.i_select_wish_list()"
+});
+formatter.result({
+  "duration": 1836715848,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "My Idea",
+      "offset": 15
+    }
+  ],
+  "location": "WishListTests.i_add_an_idea_to_wish_list(String)"
+});
+formatter.result({
+  "duration": 1029162095,
+  "status": "passed"
+});
+formatter.match({
+  "location": "WishListTests.i_add_to_wish_list()"
+});
+formatter.result({
+  "duration": 63886897,
+  "status": "passed"
+});
+formatter.match({
+  "location": "WishListTests.wish_list_is_saved()"
+});
+formatter.result({
+  "duration": 1063004680,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 1000244121,
+  "status": "passed"
+});
 formatter.uri("AmazonResults.feature");
 formatter.feature({
   "line": 1,
@@ -13,164 +214,6 @@ formatter.feature({
   "description": "",
   "id": "test-results-functionality---sort-by,-star-rating,-brand,-pagination",
   "keyword": "Feature"
-});
-formatter.background({
-  "line": 3,
-  "name": "User views Amazon results",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 4,
-  "name": "I am on the results on URL \"https://www.amazon.co.uk/s/ref\u003dnb_sb_noss_2?url\u003dsearch-alias%3Daps\u0026field-keywords\u003dGTX+1080\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "https://www.amazon.co.uk/s/ref\u003dnb_sb_noss_2?url\u003dsearch-alias%3Daps\u0026field-keywords\u003dGTX+1080",
-      "offset": 28
-    }
-  ],
-  "location": "ResultsSortTestsv2.i_am_on_the_results_page_on_URL(String)"
-});
-formatter.result({
-  "duration": 1593534046,
-  "status": "passed"
-});
-formatter.scenario({
-  "comments": [
-    {
-      "line": 6,
-      "value": "#@Ignore"
-    }
-  ],
-  "line": 7,
-  "name": "Sort by Price: High to Low",
-  "description": "",
-  "id": "test-results-functionality---sort-by,-star-rating,-brand,-pagination;sort-by-price:-high-to-low",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 8,
-  "name": "I sort by \"Price: High to Low\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 9,
-  "name": "\"PNY GeForce GTX 1080 Ti Custom Design\" is displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Price: High to Low",
-      "offset": 11
-    }
-  ],
-  "location": "ResultsSortTestsv2.i_sort_by(String)"
-});
-formatter.result({
-  "duration": 269944153,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "PNY GeForce GTX 1080 Ti Custom Design",
-      "offset": 1
-    }
-  ],
-  "location": "ResultsSortTestsv2.result_is_displayed(String)"
-});
-formatter.result({
-  "duration": 2061061271,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 1002257509,
-  "status": "passed"
-});
-formatter.background({
-  "line": 3,
-  "name": "User views Amazon results",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 4,
-  "name": "I am on the results on URL \"https://www.amazon.co.uk/s/ref\u003dnb_sb_noss_2?url\u003dsearch-alias%3Daps\u0026field-keywords\u003dGTX+1080\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "https://www.amazon.co.uk/s/ref\u003dnb_sb_noss_2?url\u003dsearch-alias%3Daps\u0026field-keywords\u003dGTX+1080",
-      "offset": 28
-    }
-  ],
-  "location": "ResultsSortTestsv2.i_am_on_the_results_page_on_URL(String)"
-});
-formatter.result({
-  "duration": 1286363682,
-  "status": "passed"
-});
-formatter.scenario({
-  "comments": [
-    {
-      "line": 10,
-      "value": "#@Ignore"
-    }
-  ],
-  "line": 11,
-  "name": "Sort by Price: Low to High",
-  "description": "",
-  "id": "test-results-functionality---sort-by,-star-rating,-brand,-pagination;sort-by-price:-low-to-high",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 12,
-  "name": "I sort by \"Price: Low to High\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 13,
-  "name": "\"PNY GeForce GTX 1080 Ti Custom Design\" is not displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Price: Low to High",
-      "offset": 11
-    }
-  ],
-  "location": "ResultsSortTestsv2.i_sort_by(String)"
-});
-formatter.result({
-  "duration": 116258923,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "PNY GeForce GTX 1080 Ti Custom Design",
-      "offset": 1
-    }
-  ],
-  "location": "ResultsSortTestsv2.is_not_displayed(String)"
-});
-formatter.result({
-  "duration": 1980139200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 1000690190,
-  "status": "passed"
 });
 formatter.uri("AmazonTodayDeals.feature");
 formatter.feature({

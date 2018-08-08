@@ -22,5 +22,5 @@ Background: User navigates to Amazon home page
   Scenario: Failed log in attempt
     When I click the sign in button
     And I am on the login page
-    And I enter my username "test@ball.com" and password "abc12345"
+    And I enter my username "test@ball.com"
     Then login fails with "We cannot find an account with that e-mail address"
