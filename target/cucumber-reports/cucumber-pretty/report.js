@@ -67,21 +67,21 @@ formatter.match({
   "location": "HomeSearchTestsv2.i_am_on_the_homepage_URL(String)"
 });
 formatter.result({
-  "duration": 1300841939,
+  "duration": 1564766861,
   "status": "passed"
 });
 formatter.match({
   "location": "HomeLoginTestsv2.i_click_on_signin_button()"
 });
 formatter.result({
-  "duration": 552346225,
+  "duration": 630298228,
   "status": "passed"
 });
 formatter.match({
   "location": "HomeLoginTestsv2.i_am_on_the_login_page()"
 });
 formatter.result({
-  "duration": 53370197,
+  "duration": 54360504,
   "status": "passed"
 });
 formatter.match({
@@ -94,7 +94,7 @@ formatter.match({
   "location": "HomeLoginTestsv2.i_enter_credentials(String)"
 });
 formatter.result({
-  "duration": 596119468,
+  "duration": 564455387,
   "status": "passed"
 });
 formatter.match({
@@ -107,7 +107,7 @@ formatter.match({
   "location": "LoggedInSuccessfulTests.i_enter_password(String)"
 });
 formatter.result({
-  "duration": 2652234773,
+  "duration": 1662957754,
   "status": "passed"
 });
 formatter.match({
@@ -120,91 +120,91 @@ formatter.match({
   "location": "LoggedInSuccessfulTests.login_succeeded(String)"
 });
 formatter.result({
-  "duration": 36361218,
+  "duration": 77929168,
   "status": "passed"
 });
 formatter.scenario({
   "comments": [
     {
-      "line": 11,
+      "line": 23,
       "value": "#@Ignore"
     }
   ],
-  "line": 12,
-  "name": "I add an item to my Wish List",
+  "line": 24,
+  "name": "I create a shopping list",
   "description": "",
-  "id": "test-homepage-functionality---search,categories,shop-by,login;i-add-an-item-to-my-wish-list",
+  "id": "test-homepage-functionality---search,categories,shop-by,login;i-create-a-shopping-list",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 13,
+  "line": 25,
   "name": "I click on Your Lists",
   "keyword": "When "
 });
 formatter.step({
-  "line": 14,
+  "line": 26,
   "name": "I select Wish List",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
-  "name": "I add an idea \"My Idea\" to my list",
+  "line": 27,
+  "name": "I click Create a List",
   "keyword": "And "
 });
 formatter.step({
-  "line": 16,
-  "name": "I click Add to list",
+  "line": 28,
+  "name": "I set a List name of \"My List\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
-  "name": "My Wish List item is saved",
+  "line": 29,
+  "name": "I Create the List",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "WishListTests.i_click_on_your_lists()"
+  "location": "ListTests.i_click_on_your_lists()"
 });
 formatter.result({
-  "duration": 46004896,
+  "duration": 42473574,
   "status": "passed"
 });
 formatter.match({
-  "location": "WishListTests.i_select_wish_list()"
+  "location": "ListTests.i_select_wish_list()"
 });
 formatter.result({
-  "duration": 1836715848,
+  "duration": 1689068169,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ListTests.create_a_list()"
+});
+formatter.result({
+  "duration": 902838483,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "My Idea",
-      "offset": 15
+      "val": "My List",
+      "offset": 22
     }
   ],
-  "location": "WishListTests.i_add_an_idea_to_wish_list(String)"
+  "location": "ListTests.set_list_name(String)"
 });
 formatter.result({
-  "duration": 1029162095,
+  "duration": 265708264,
   "status": "passed"
 });
 formatter.match({
-  "location": "WishListTests.i_add_to_wish_list()"
+  "location": "ListTests.shopping_list_is_created()"
 });
 formatter.result({
-  "duration": 63886897,
-  "status": "passed"
-});
-formatter.match({
-  "location": "WishListTests.wish_list_is_saved()"
-});
-formatter.result({
-  "duration": 1063004680,
+  "duration": 2065540660,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1000244121,
+  "duration": 1000243865,
   "status": "passed"
 });
 formatter.uri("AmazonResults.feature");

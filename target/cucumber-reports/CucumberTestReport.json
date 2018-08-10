@@ -25,7 +25,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1300841939,
+              "duration": 1564766861,
               "status": "passed"
             },
             "line": 4,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 552346225,
+              "duration": 630298228,
               "status": "passed"
             },
             "line": 5,
@@ -55,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 53370197,
+              "duration": 54360504,
               "status": "passed"
             },
             "line": 6,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 596119468,
+              "duration": 564455387,
               "status": "passed"
             },
             "line": 7,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 2652234773,
+              "duration": 1662957754,
               "status": "passed"
             },
             "line": 8,
@@ -103,7 +103,7 @@
           },
           {
             "result": {
-              "duration": 36361218,
+              "duration": 77929168,
               "status": "passed"
             },
             "line": 9,
@@ -124,18 +124,18 @@
       {
         "comments": [
           {
-            "line": 11,
+            "line": 23,
             "value": "#@Ignore"
           }
         ],
-        "line": 12,
-        "name": "I add an item to my Wish List",
+        "line": 24,
+        "name": "I create a shopping list",
         "description": "",
-        "id": "test-homepage-functionality---search,categories,shop-by,login;i-add-an-item-to-my-wish-list",
+        "id": "test-homepage-functionality---search,categories,shop-by,login;i-create-a-shopping-list",
         "after": [
           {
             "result": {
-              "duration": 1000244121,
+              "duration": 1000243865,
               "status": "passed"
             },
             "match": {
@@ -148,67 +148,67 @@
         "steps": [
           {
             "result": {
-              "duration": 46004896,
+              "duration": 42473574,
               "status": "passed"
             },
-            "line": 13,
+            "line": 25,
             "name": "I click on Your Lists",
             "match": {
-              "location": "WishListTests.i_click_on_your_lists()"
+              "location": "ListTests.i_click_on_your_lists()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1836715848,
+              "duration": 1689068169,
               "status": "passed"
             },
-            "line": 14,
+            "line": 26,
             "name": "I select Wish List",
             "match": {
-              "location": "WishListTests.i_select_wish_list()"
+              "location": "ListTests.i_select_wish_list()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1029162095,
+              "duration": 902838483,
               "status": "passed"
             },
-            "line": 15,
-            "name": "I add an idea \"My Idea\" to my list",
+            "line": 27,
+            "name": "I click Create a List",
+            "match": {
+              "location": "ListTests.create_a_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 265708264,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I set a List name of \"My List\"",
             "match": {
               "arguments": [
                 {
-                  "val": "My Idea",
-                  "offset": 15
+                  "val": "My List",
+                  "offset": 22
                 }
               ],
-              "location": "WishListTests.i_add_an_idea_to_wish_list(String)"
+              "location": "ListTests.set_list_name(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 63886897,
+              "duration": 2065540660,
               "status": "passed"
             },
-            "line": 16,
-            "name": "I click Add to list",
+            "line": 29,
+            "name": "I Create the List",
             "match": {
-              "location": "WishListTests.i_add_to_wish_list()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1063004680,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "My Wish List item is saved",
-            "match": {
-              "location": "WishListTests.wish_list_is_saved()"
+              "location": "ListTests.shopping_list_is_created()"
             },
             "keyword": "Then "
           }

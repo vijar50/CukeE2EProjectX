@@ -58,6 +58,34 @@ public class LoggedInPages {
   @FindBy(how = How.ID , using = "wfa-note-add-button")
   public WebElement addToListButton;
 
+  //First List Item
+  @FindBy(how = How.CSS , using = "div[id*='itemTitle_']")
+  public WebElement listItem;
+
+  //Remove Item Button
+  @FindBy(how = How.CSS , using = "span[id='a-autoid-6'] span input")
+  public WebElement removeItemButton;
+
+  //Deleted Message
+  @FindBy(how = How.CSS , using = "div[class='a-box a-alert-inline a-alert-inline-success'] div div")
+  public WebElement deletedStatusMessage;
+
+  //Create a List link
+  @FindBy(how = How.ID , using = "createList")
+  public WebElement createListLink;
+
+  //List Pop up
+  @FindBy(how = How.CSS , using = "a-popover-wrapper")
+  public WebElement popUpWindow;
+
+  //New List Name Input Field
+  @FindBy(how = How.CSS , using = "#WLNEW_list_name")
+  public WebElement newListNameInput;
+
+  //Create List Button
+  @FindBy(how = How.CSS , using = ".a-form-actions span:nth-child(3) span span input")
+  public WebElement createListButton;
+
   public LoggedInPages(WebDriver driver){
     this.driver = driver;
     //Using the wait in the constructor
@@ -68,6 +96,14 @@ public class LoggedInPages {
     //Same Method in Homepagev2 - can refactor
     wait.until(ExpectedConditions.visibilityOf(wishListLink));
     log.debug("Menu Displayed? " + wishListLink.isDisplayed());
+  }
+
+  public void waitforTextPresent(String input, WebElement a){
+    wait.until(ExpectedConditions.textToBePresentInElement(a, input));
+  }
+
+  public void waitforElementPresent(WebElement a){
+    wait.until(ExpectedConditions.visibilityOf(a));
   }
 
   private static final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -82,5 +118,11 @@ public class LoggedInPages {
 
   public WebElement newWishListItem(String str){
     return driver.findElement(By.xpath("//span[text()='"+str+"']"));
+  }
+
+  public void checkAndRemoveItem(){
+    if (removeItemButton.isDisplayed()){
+      removeItemButton.click();
+    }
   }
 }
