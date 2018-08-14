@@ -67,21 +67,21 @@ formatter.match({
   "location": "HomeSearchTestsv2.i_am_on_the_homepage_URL(String)"
 });
 formatter.result({
-  "duration": 1564766861,
+  "duration": 1327451894,
   "status": "passed"
 });
 formatter.match({
   "location": "HomeLoginTestsv2.i_click_on_signin_button()"
 });
 formatter.result({
-  "duration": 630298228,
+  "duration": 558100335,
   "status": "passed"
 });
 formatter.match({
   "location": "HomeLoginTestsv2.i_am_on_the_login_page()"
 });
 formatter.result({
-  "duration": 54360504,
+  "duration": 55031731,
   "status": "passed"
 });
 formatter.match({
@@ -94,7 +94,7 @@ formatter.match({
   "location": "HomeLoginTestsv2.i_enter_credentials(String)"
 });
 formatter.result({
-  "duration": 564455387,
+  "duration": 556954161,
   "status": "passed"
 });
 formatter.match({
@@ -107,7 +107,7 @@ formatter.match({
   "location": "LoggedInSuccessfulTests.i_enter_password(String)"
 });
 formatter.result({
-  "duration": 1662957754,
+  "duration": 1735667590,
   "status": "passed"
 });
 formatter.match({
@@ -120,91 +120,85 @@ formatter.match({
   "location": "LoggedInSuccessfulTests.login_succeeded(String)"
 });
 formatter.result({
-  "duration": 77929168,
+  "duration": 38789825,
   "status": "passed"
 });
 formatter.scenario({
   "comments": [
     {
-      "line": 23,
+      "line": 30,
       "value": "#@Ignore"
     }
   ],
-  "line": 24,
-  "name": "I create a shopping list",
+  "line": 31,
+  "name": "I opt into Amazon Prime",
   "description": "",
-  "id": "test-homepage-functionality---search,categories,shop-by,login;i-create-a-shopping-list",
+  "id": "test-homepage-functionality---search,categories,shop-by,login;i-opt-into-amazon-prime",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 25,
-  "name": "I click on Your Lists",
+  "line": 32,
+  "name": "I click on Try Prime",
   "keyword": "When "
 });
 formatter.step({
-  "line": 26,
-  "name": "I select Wish List",
+  "line": 33,
+  "name": "I click on Start 30 Day Free Trial",
   "keyword": "And "
 });
 formatter.step({
-  "line": 27,
-  "name": "I click Create a List",
+  "line": 34,
+  "name": "I enter my credit card details",
   "keyword": "And "
 });
 formatter.step({
-  "line": 28,
-  "name": "I set a List name of \"My List\"",
+  "line": 35,
+  "name": "I click add card",
   "keyword": "And "
 });
 formatter.step({
-  "line": 29,
-  "name": "I Create the List",
+  "line": 36,
+  "name": "card addition fails",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "ListTests.i_click_on_your_lists()"
+  "location": "PrimeTests.i_click_on_try_prime()"
 });
 formatter.result({
-  "duration": 42473574,
+  "duration": 1049831248,
   "status": "passed"
 });
 formatter.match({
-  "location": "ListTests.i_select_wish_list()"
+  "location": "PrimeTests.i_click_start_trial()"
 });
 formatter.result({
-  "duration": 1689068169,
+  "duration": 863909247,
   "status": "passed"
 });
 formatter.match({
-  "location": "ListTests.create_a_list()"
+  "location": "PrimeTests.i_enter_my_card_details()"
 });
 formatter.result({
-  "duration": 902838483,
+  "duration": 931086457,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "My List",
-      "offset": 22
-    }
-  ],
-  "location": "ListTests.set_list_name(String)"
+  "location": "PrimeTests.i_add_card()"
 });
 formatter.result({
-  "duration": 265708264,
+  "duration": 123546480,
   "status": "passed"
 });
 formatter.match({
-  "location": "ListTests.shopping_list_is_created()"
+  "location": "PrimeTests.card_addition_fails()"
 });
 formatter.result({
-  "duration": 2065540660,
+  "duration": 47370302,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1000243865,
+  "duration": 1000219446,
   "status": "passed"
 });
 formatter.uri("AmazonResults.feature");

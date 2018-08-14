@@ -34,6 +34,10 @@ public class LoggedInPages {
   @FindBy(how = How.ID , using = "nav-link-wishlist")
   public WebElement yourListsDropdownLink;
 
+  //Nav Link Try Prime
+  @FindBy(how = How.ID , using = "nav-link-prime")
+  public WebElement primeLink;
+
   //Wish List List Item
   @FindBy(how = How.XPATH , using = "//*[@id='nav-flyout-wl-items']/div/a[1]/span")
   public WebElement wishListLink;
@@ -85,6 +89,26 @@ public class LoggedInPages {
   //Create List Button
   @FindBy(how = How.CSS , using = ".a-form-actions span:nth-child(3) span span input")
   public WebElement createListButton;
+
+  //Start 30 Day Free Trial Link
+  @FindBy(how = How.CSS , using = "#prime-footer-cta span input")
+  public WebElement startTrialButton;
+
+  //Name on Card Field
+  @FindBy(how = How.CSS , using = "input[id*='40']")
+  public WebElement nameOnCardField;
+
+  //Card Number Field
+  @FindBy(how = How.CSS , using = "input[id*='41']")
+  public WebElement cardNumField;
+
+  //Add Card Button
+  @FindBy(how = How.NAME , using = "ppw-widgetEvent:AddCreditCardEvent")
+  public WebElement addCardButton;
+
+  //Error Message
+  @FindBy(how = How.TAG_NAME , using = "h4")
+  public WebElement cardFailedMessage;
 
   public LoggedInPages(WebDriver driver){
     this.driver = driver;

@@ -20,11 +20,17 @@ Background: User navigates to Amazon home page
     When I click on Your Lists
     And I select Wish List
     Then I delete the latest item
-  #@Ignore
+  @Ignore
   Scenario: I create a shopping list
     When I click on Your Lists
     And I select Wish List
     And I click Create a List
     And I set a List name of "My List"
     Then I Create the List
-
+  #@Ignore
+  Scenario: I opt into Amazon Prime
+    When I click on Try Prime
+    And I click on Start 30 Day Free Trial
+    And I enter my credit card details
+    And I click add card
+    Then card addition fails
