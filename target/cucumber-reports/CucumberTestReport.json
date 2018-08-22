@@ -25,7 +25,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1327451894,
+              "duration": 1437404463,
               "status": "passed"
             },
             "line": 4,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 558100335,
+              "duration": 771859795,
               "status": "passed"
             },
             "line": 5,
@@ -55,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 55031731,
+              "duration": 54930252,
               "status": "passed"
             },
             "line": 6,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 556954161,
+              "duration": 556731581,
               "status": "passed"
             },
             "line": 7,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 1735667590,
+              "duration": 1587272691,
               "status": "passed"
             },
             "line": 8,
@@ -103,7 +103,7 @@
           },
           {
             "result": {
-              "duration": 38789825,
+              "duration": 62692254,
               "status": "passed"
             },
             "line": 9,
@@ -124,18 +124,18 @@
       {
         "comments": [
           {
-            "line": 30,
+            "line": 37,
             "value": "#@Ignore"
           }
         ],
-        "line": 31,
-        "name": "I opt into Amazon Prime",
+        "line": 38,
+        "name": "I add an Address",
         "description": "",
-        "id": "test-homepage-functionality---search,categories,shop-by,login;i-opt-into-amazon-prime",
+        "id": "test-homepage-functionality---search,categories,shop-by,login;i-add-an-address",
         "after": [
           {
             "result": {
-              "duration": 1000219446,
+              "duration": 1000244739,
               "status": "passed"
             },
             "match": {
@@ -148,61 +148,67 @@
         "steps": [
           {
             "result": {
-              "duration": 1049831248,
+              "duration": 548560447,
               "status": "passed"
             },
-            "line": 32,
-            "name": "I click on Try Prime",
+            "line": 39,
+            "name": "I click on Your Account",
             "match": {
-              "location": "PrimeTests.i_click_on_try_prime()"
+              "location": "AddressTests.i_click_on_yourAcc_link()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 863909247,
+              "duration": 587833506,
               "status": "passed"
             },
-            "line": 33,
-            "name": "I click on Start 30 Day Free Trial",
+            "line": 40,
+            "name": "I click on \"Your Addresses\"",
             "match": {
-              "location": "PrimeTests.i_click_start_trial()"
+              "arguments": [
+                {
+                  "val": "Your Addresses",
+                  "offset": 12
+                }
+              ],
+              "location": "AddressTests.i_click_start_trial(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 931086457,
+              "duration": 540546247,
               "status": "passed"
             },
-            "line": 34,
-            "name": "I enter my credit card details",
+            "line": 41,
+            "name": "I click add Address",
             "match": {
-              "location": "PrimeTests.i_enter_my_card_details()"
+              "location": "AddressTests.i_enter_my_card_details()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 123546480,
+              "duration": 2028164338,
               "status": "passed"
             },
-            "line": 35,
-            "name": "I click add card",
+            "line": 42,
+            "name": "I enter my address details",
             "match": {
-              "location": "PrimeTests.i_add_card()"
+              "location": "AddressTests.i_add_card()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 47370302,
+              "duration": 3000187426,
               "status": "passed"
             },
-            "line": 36,
-            "name": "card addition fails",
+            "line": 43,
+            "name": "I add the Address",
             "match": {
-              "location": "PrimeTests.card_addition_fails()"
+              "location": "AddressTests.card_addition_fails()"
             },
             "keyword": "Then "
           }

@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -18,6 +19,8 @@ public class LoggedInPages {
 
   WebDriver driver;
   WebDriverWait wait;
+  //NAV LINKS --------------------------------------------------
+
   //Password Locator
   @FindBy(how = How.ID , using = "ap_password")
   public WebElement passwordLocator;
@@ -37,6 +40,20 @@ public class LoggedInPages {
   //Nav Link Try Prime
   @FindBy(how = How.ID , using = "nav-link-prime")
   public WebElement primeLink;
+
+  //Nav Link Your Account
+  @FindBy(how = How.ID , using = "nav-link-yourAccount")
+  public WebElement yourAccLink;
+
+  //Your Addresses Link
+  @FindBy(how = How.XPATH , using = "//*[contains(text(), 'Your Addresses')]")
+  public WebElement yourAddressesLink;
+
+  //Add Address
+  @FindBy(how = How.CSS , using = "#ya-myab-address-add-link")
+  public WebElement addAddress;
+
+  //WISH LIST FLOW --------------------------------------------
 
   //Wish List List Item
   @FindBy(how = How.XPATH , using = "//*[@id='nav-flyout-wl-items']/div/a[1]/span")
@@ -89,6 +106,42 @@ public class LoggedInPages {
   //Create List Button
   @FindBy(how = How.CSS , using = ".a-form-actions span:nth-child(3) span span input")
   public WebElement createListButton;
+
+  //ADD ADDRESS FORM --------------------------------------------
+
+  //Full Name field
+  @FindBy(how = How.ID , using = "address-ui-widgets-enterAddressFullName")
+  public WebElement fullNameInput;
+
+  //Phone Number field
+  @FindBy(how = How.ID , using = "address-ui-widgets-enterAddressPhoneNumber")
+  public WebElement phoneNumInput;
+
+  //Country field
+  @FindBy(how = How.ID , using = "address-ui-widgets-countryCode-dropdown-nativeId")
+  public WebElement countryField;
+
+  //Postcode field
+  @FindBy(how = How.ID , using = "address-ui-widgets-enterAddressPostalCode")
+  public WebElement postCodeField;
+
+  //Street Address field
+  @FindBy(how = How.ID , using = "address-ui-widgets-enterAddressLine1")
+  public WebElement streetAddressField;
+
+  //Town/City field
+  @FindBy(how = How.ID , using = "address-ui-widgets-enterAddressCity")
+  public WebElement townCityField;
+
+  //County field
+  @FindBy(how = How.ID , using = "address-ui-widgets-enterAddressStateOrRegion")
+  public WebElement countyField;
+
+  //Add Address button
+  @FindBy(how = How.CSS , using = "#a-autoid-0 span input")
+  public WebElement addAddressButton;
+
+  //PRIME FLOW --------------------------------------------------
 
   //Start 30 Day Free Trial Link
   @FindBy(how = How.CSS , using = "#prime-footer-cta span input")
@@ -148,5 +201,10 @@ public class LoggedInPages {
     if (removeItemButton.isDisplayed()){
       removeItemButton.click();
     }
+  }
+
+  public void selectCountry(){
+    Select dropdown = new Select(countryField);
+    dropdown.selectByVisibleText("United Kingdom");
   }
 }
